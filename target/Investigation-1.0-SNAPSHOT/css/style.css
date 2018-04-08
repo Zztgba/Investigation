@@ -1,0 +1,8 @@
+*{margin: 0;padding:0;}
+body{background:url(../images/background.jpg) no-repeat scroll 0px 0px / cover;width: 100%;height: 100%;font-size: 15px;font-family: "微软雅黑";color: #333;}
+#header{width: 100%;height:70px;background-color: rgba(0,0,0,0.3);}
+#header h2{line-height: 70px;text-align: center;color: #cb995c;font-size: 28px;letter-spacing: 6px;}
+#header h2 img{width: 30px;height: 30px;vertical-align: middle;margin-right: 20px;}
+#content ul{margin:140px auto 0;width: 820px;}
+#content ul li{float: left;list-style: none;margin:0 120px;width: 170px;height: 170px;cursor: pointer;}
+#content ul li img{width: 170px;height: 170px;border: 0;}

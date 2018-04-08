@@ -1,0 +1,25 @@
+*{margin:0;padding: 0;}
+body{background:url(../images/background2.jpg) no-repeat scroll 0px 0px / cover;width: 100%;height: 100%;font-size: 15px;font-family: "微软雅黑";color: #333;}
+#top{height: 70px;background-color: rgba(0,0,0,0.3);padding: 0 100px;}
+#top h3{color: #d1c89f;line-height: 70px;float:left;font-size: 32px;letter-spacing: 4px;width: 500px;}
+.middle{float: left;width: 300px;margin-top: 10px;}
+.middle img{float: left;}
+.middle span{color: #fff;font-size: 20px;display: block;float: left;padding:10px 0 0 10px;}
+.middle span:hover{color: #cc9a5d;}
+.right{float: right;margin-top: 8px;height: 100px;}
+.right img{width: 50px;height: 50px;float: left;}
+.right span{color: #fff;font-size: 20px;display: block;float: left;padding:14px 0 0 15px;}
+
+#content{margin: 20px 100px;border: 2px solid #cc9a5d;padding: 10px;}
+#content h4{color: #cc9a5d;font-size: 20px;border-bottom: 2px solid #cc9a5d;line-height: 30px;}
+.title_1{list-style: disc;line-height: 40px;margin-left:20px;border-bottom: 1px dashed #333;}
+.title_1 h3{font-weight: normal;font-size: 15px;}
+.title_1 h3:hover{background:#cc9a5d;}
+.title_1 a:link,.title_1 a:visited{color: #333;text-decoration: none;}
+.title_1 a:hover{text-decoration: underline;}
+.date{margin-right: 20px;display: block;width: 200px;float: right;}
+.data{margin-right: 10px;display: block;width: 100px;float: right;}
+
+.survey_answer{background: rgba(0,0,0,0.1);margin-left: 20px;display: none;}
+.survey_answer li{line-height: 30px;border-bottom: 1px solid #cc9a5d;list-style: circle;}
+.survey_answer li span{padding: 0 10px;}

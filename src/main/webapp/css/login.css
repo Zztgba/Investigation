@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+body,name,password,remember{margin:0;padding:0;}
+body{background:url(../images/background1.jpg) no-repeat scroll 0px 0px / cover;
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color:#fff;
+	}
+.left{
+	width:800px;
+	float:left;
+	}
+.left img{
+	margin:62px 200px;
+	width: 350px;
+	height: 450px;
+}
+.right{
+	margin:62px auto;
+	width:350px;
+	height:450px;
+	background:#fff;
+	background-color:rgba(255,255,255,0.35);
+	float:left;
+	}
+.relog{
+	width: 310px;
+	height: 60px;
+	line-height: 60px;
+	margin:0 auto;
+	font-size:20px;
+	font-weight:600;
+	letter-spacing:4px;
+	border-bottom: 2px solid #cb995c;
+	}
+.relog li{
+	float: left;
+	list-style: none;
+	width: 80px;
+	text-align: center;
+	color: #cb995c;
+	cursor: pointer;
+}
+#log{
+	color: #fff;
+	background: #cb995c;
+}
+#main{
+	margin-top: 20px;
+}
+#main1{
+	margin-top: 20px;
+	display: none;
+
+}
+input{
+	margin-left:40px;
+	width:230px;
+	height:33px;
+	color:#fff;
+	font-family:"微软雅黑";
+	font-style:italic;
+	font-size:15px;
+	background-color:rgba(255,255,255,0);
+	border:none;
+	border-bottom:1px solid #fff;
+	}
+/*input::-webkit-input-placeholder {*/
+/*　　color: #fff;*/
+/*　　}*/
+.name{
+	padding-left:40px;
+	margin-bottom:25px;
+	background:url(../images/name.png) no-repeat;
+	}
+.password{
+	padding-left:40px;
+	margin-bottom:15px;
+	background:url(../images/password.png) no-repeat;
+	}
+.remember{
+	width:20px;
+	height:20px;
+	border:1px solid #fff;
+	float:left;
+	}
+.mail{
+	padding-left:40px;
+	margin-bottom:25px;
+	background:url(../images/mail.png) no-repeat;
+	}
+.login{
+	margin:30px 0 0 40px;
+	width:270px;
+	height:50px;
+	border:1px solid #fff;
+	border-radius:25px;
+	font-style:normal;
+	letter-spacing:4px;
+	font-size:18px;
+	cursor: pointer;
+	}
+.login:hover{
+	background:#cb995c;
+	}
+.ck1{
+	float:left;
+	display:block;
+	margin-top:4px;
+	font-size:10px;
+	}
+.ck1 a:link,.ck1 a:visited,.ck2 a:link,.ck2 a:visited{
+	color:#fff;
+	text-decoration:none;
+	}
+.ck1 a:hover,.ck2 a:hover{
+	text-decoration:underline;
+	}
+.ck2{
+	float:right;
+	display:block;
+	margin:4px 40px 0 0;
+	font-size:10px;	
+	}
+.other{
+	margin:20px 0 0 40px;
+	}
+.title{
+	padding:0 15px;
+	}
+.software img{
+	padding:25px 23px;
+	}

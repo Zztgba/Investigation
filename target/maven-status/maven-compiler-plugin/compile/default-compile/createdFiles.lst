@@ -1,0 +1,15 @@
+inv\pojo\Answer.class
+inv\controller\UserController.class
+inv\mapper\QuestionMapper.class
+inv\service\impl\UserServiceImpl.class
+inv\service\impl\PaperServiceImpl.class
+inv\mapper\UserMapper.class
+inv\pojo\Question.class
+inv\test\test.class
+inv\pojo\Paper.class
+inv\pojo\User.class
+inv\service\PaperService.class
+inv\service\UserService.class
+inv\mapper\AnswerMapper.class
+inv\mapper\PaperMapper.class
+inv\controller\PaperController.class

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="inv.mapper.PaperMapper">
+    <!--auto generated Code-->
+    <resultMap id="BaseResultMap" type="inv.pojo.Paper">
+        <id column="pid" property="pid" jdbcType="BIGINT" />
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="uid" property="uid" jdbcType="BIGINT"/>
+        <result column="date" property="date" jdbcType="VARCHAR"/>
+        <result column="type" property="type" jdbcType="VARCHAR"/>
+        <result column="pnum" property="pnum" jdbcType="BIGINT" />
+    </resultMap>
+
+    <select id="selectByPid" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        SELECT *
+        FROM paper
+        WHERE pid = #{pid}
+    </select>
+
+    <select id="selectByUserForPersonal" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        SELECT *
+        FROM paper
+        WHERE uid = #{id}
+        ORDER BY date
+    </select>
+
+    <insert id="insert" parameterType="inv.pojo.Paper">
+        INSERT INTO paper
+        (title , date ,type ,uid ,pnum)
+        VALUES
+        (#{paper.title},#{paper.date},#{paper.type},#{paper.uid} ,#{paper.pnum})
+    </insert>
+
+
+    <select id="selectLastInsert" resultType="java.lang.Long">
+        select   pid
+        from   paper
+        order   by   pid   desc   limit   1
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT *
+        FROM paper
+    </select>
+
+    <update id="updatePnum" parameterType="java.lang.Long">
+        UPDATE paper
+        SET pnum = #{pnum}
+        WHERE pid = #{pid}
+    </update>
+</mapper>

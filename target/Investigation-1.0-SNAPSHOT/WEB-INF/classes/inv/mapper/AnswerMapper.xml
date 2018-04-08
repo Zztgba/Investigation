@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="inv.mapper.AnswerMapper">
+    <!--auto generated Code-->
+    <resultMap id="BaseResultMap" type="inv.pojo.Answer">
+        <id column="aid" property="aid" jdbcType="BIGINT"/>
+        <result column="ans" property="ans"/>
+        <result column="answernum" property="answernum"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="inv.pojo.Answer">
+        INSERT INTO answer
+        (ans,qid ,answernum)
+        VALUES
+        (#{answer.ans},#{answer.qid},0)
+    </insert>
+
+    <select id="selectByQid" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        SELECT *
+        FROM answer
+        WHERE qid=#{qid}
+    </select>
+
+    <select id="selectByAid" parameterType="java.lang.Long" resultType="java.lang.Long">
+        SELECT answernum
+        FROM answer
+        WHERE aid=#{aid}
+    </select>
+
+    <update id="updateAnswernum" parameterType="java.lang.Long">
+        UPDATE answer
+        SET answernum=#{answernum}
+        WHERE aid=#{aid}
+    </update>
+</mapper>
+

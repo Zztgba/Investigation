@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="user" type="inv.pojo.User"/>
+        <typeAlias type="inv.pojo.Paper" alias="paper" />
+        <typeAlias type="inv.pojo.Question" alias="question" />
+        <typeAlias type="inv.pojo.Answer" alias="answer" />
+    </typeAliases>
+</configuration>

@@ -1,0 +1,16 @@
+-- auto Generated on 2017-11-22 08:16:54 
+-- DROP TABLE IF EXISTS `paper`; 
+CREATE TABLE `paper`(
+    `pid` BIGINT (15) NOT NULL AUTO_INCREMENT COMMENT 'pid',
+    `title` VARCHAR (50) NOT NULL DEFAULT '' COMMENT 'title',
+    `uid` BIGINT (15) NOT NULL DEFAULT -1 COMMENT 'uid',
+    PRIMARY KEY (`pid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '`paper`';
+-- auto Generated on 2017-11-22 08:19:15 
+-- DROP TABLE IF EXISTS `paper`; 
+CREATE TABLE `paper`(
+    `pid` BIGINT (15) NOT NULL AUTO_INCREMENT COMMENT 'pid',
+    `title` VARCHAR (50) NOT NULL DEFAULT '' COMMENT 'title',
+    `uid` BIGINT (15) NOT NULL DEFAULT -1 COMMENT 'uid',
+    PRIMARY KEY (`pid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '`paper`';
